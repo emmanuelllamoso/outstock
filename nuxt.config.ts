@@ -20,18 +20,13 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Outstock - Clean, Minimal eCommerce Vue Nuxt 3 Template",
+      // link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
       script: [
         {
           src: "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js",
         },
       ],
     },
-  },
-
-  // ✅ THIS FIXES YOUR DIGITALOCEAN ERROR
-  nitro: {
-    port: process.env.PORT || 3000,
-    host: '0.0.0.0'
   },
 
   compatibilityDate: '2024-11-10',
